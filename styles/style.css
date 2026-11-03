@@ -171,6 +171,7 @@ body {
 .lot p {
   position: relative;
   z-index: 1;
+  margin: 0;
 }
 
 .lot h3 {
@@ -185,11 +186,6 @@ body {
   font-size: 24px;
   line-height: 1.2;
   font-weight: normal;
-}
-
-.lot h3,
-.lot p {
-  margin: 0;
 }
 
 .more {
@@ -269,15 +265,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 5px;
-}
-
-.footer-menu a {
-  color: black;
-  font-size: 22px;
-  line-height: 28px;
-  text-decoration: none;
-  border-bottom: 2px solid black;
-  padding-bottom: 4px;
 }
 
 .footer-menu a {
