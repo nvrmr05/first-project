@@ -8,6 +8,7 @@ body {
 }
 
 .header {
+  justify-content: center;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
@@ -16,7 +17,6 @@ body {
 
 .logo {
   width: 135px;
-  justify-self: center;
 }
 
 .menu {
@@ -64,6 +64,8 @@ body {
 }
 
 .cover {
+   display: flex;
+   flex-direction: column;
   position: relative;
   background-image: url("../images/cover.jpg");
   background-size: cover;
@@ -90,12 +92,16 @@ body {
   padding: 167px 50px 33px;
 }
 
+.cover-title div{
+  margin-right: -0.3em;
+}
 .one-word {
   align-self: flex-start;
 }
 
 .two-word {
   align-self: center;
+  margin-top: 10px;
 }
 
 .three-word {
@@ -103,6 +109,7 @@ body {
 }
 
 .cover-bottom {
+  margin-top:auto;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -116,15 +123,18 @@ body {
   border: 1px solid white;
   padding: 12px 30px;
   font-size: 22px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .cover-bottom p {
   color: white;
-  font-size: 26px;
+  font-size: 20px;
   text-transform: uppercase;
   word-spacing: 10px;
   letter-spacing: 2px;
   margin: 0;
+  white-space: nowrap;
 }
 
 .lots {
@@ -181,12 +191,12 @@ body {
   font-size: 18px;
   line-height: 1.2;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: underline;
 }
 
 .lot p {
-  font-size: 14px;
-  line-height: 1.2;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: normal;
 }
 
@@ -202,7 +212,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 70px;
-  padding: 150px 50px 100px;
+  padding: 150px 50px 100px 90px;
 }
 
 .about-logo {
@@ -250,8 +260,9 @@ body {
   flex-direction: column;
   gap: 4px;
   font-style: normal;
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 220px;
 }
 
 .footer-contacts a {
@@ -271,8 +282,8 @@ body {
 
 .footer-menu a {
   color: black;
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 22px;
   text-decoration: none;
   border-bottom: 2px solid black;
   padding-bottom: 4px;
