@@ -211,7 +211,7 @@ body {
 .about {
   display: flex;
   align-items: flex-start;
-  gap: 70px;
+  gap: 50px;
   padding: 150px 50px 100px 60px;
 }
 
