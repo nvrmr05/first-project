@@ -22,20 +22,21 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .menu a {
   color: black;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 26px;
 }
 
 .menu a.underline {
-  text-decoration: none;
-  border-bottom: 2px solid black;
-  padding-bottom: 0px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-bottom: none;
+  padding-bottom: none;
 }
 
 .menu span {
@@ -45,17 +46,19 @@ body {
 .contacts {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
   font-style: normal;
   justify-self: end;
   font-size: 18px;
   line-height: 22px;
+  margin-right: 28px;
 }
 
 .contacts a {
   color: black;
-  text-decoration: none;
-  border-bottom: 2px solid black;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-bottom: none;
   width: fit-content;
 }
 
@@ -106,6 +109,7 @@ body {
 
 .three-word {
   align-self: flex-end;
+  margin-top: 16px;
 }
 
 .cover-bottom {
@@ -114,7 +118,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 60px 50px;
+  padding: 0 50px 50px;
 }
 
 .bet-button {
@@ -131,25 +135,25 @@ body {
   color: white;
   font-size: 20px;
   text-transform: uppercase;
-  word-spacing: 10px;
+  word-spacing: 15px;
   letter-spacing: 2px;
   margin: 0;
   white-space: nowrap;
 }
 
 .lots {
-  padding: 40px;
+  padding: 300px 25px 0;
 }
 
 .lots h2 {
   font-size: 40px;
   font-weight: bold;
-  margin: 0 0 20px 25px;
+  margin: 0 0 28px 40px;
 }
 
 .lots-container {
   display: flex;
-  gap: 27px;
+  gap: 25px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -160,12 +164,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: calc((100% - 54px) / 3);
+  width: calc((100% - 50px) / 3);
   min-width: 0;
   height: 600px;
-  padding: 40px;
+  padding: 50px 40px;
   color: white;
   background-color: black;
+  overflow: hidden;
 }
 
 .lot img {
@@ -179,6 +184,16 @@ body {
   object-position: center;
 }
 
+.lot:nth-child(2) img {
+  object-position: center top;
+  transform: scale(1.5);
+  transform-origin: center top;
+  filter: brightness(45%);
+}
+
+.lot:nth-child(3) img {
+  object-position: 30% center;
+}
 .lot h3,
 .lot p {
   position: relative;
@@ -188,15 +203,15 @@ body {
 
 .lot h3 {
   margin-bottom: 30px;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.2;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: underline;
 }
 .lot p {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 24px;
   font-weight: normal;
 }
 
@@ -205,7 +220,7 @@ body {
   font-size: 20px;
   text-decoration: underline;
   display: inline-block;
-  margin: 35px 0 0 50px;
+  margin: 35px 0 0 40px;
 }
 
 .about {
@@ -237,14 +252,14 @@ body {
 }
 
 .about-content h2 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bold;
   margin: 0 0 90px;
 }
 
 .about-content p {
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 20px;
+  line-height: 24px;
   margin: 0 0 25px;
 }
 
@@ -258,7 +273,7 @@ body {
 .footer-contacts {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 1px;
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
@@ -267,9 +282,10 @@ body {
 
 .footer-contacts a {
   color: black;
-  text-decoration: none;
-  border-bottom: 2px solid black;
-  padding-bottom: 4px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-bottom: none;
+  padding-bottom: 0;
   width: fit-content;
 }
 
@@ -277,21 +293,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 1px;
 }
 
 .footer-menu a {
   color: black;
   font-size: 16px;
   line-height: 22px;
-  text-decoration: none;
-  border-bottom: 2px solid black;
-  padding-bottom: 4px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .footer-social {
   display: flex;
-  gap: 25px;
+  gap: 46px;
   align-self: flex-start;
   margin-top: 0;
 }
@@ -303,7 +320,7 @@ body {
 }
 
 .footer-menu a.main {
-  border-bottom: none;
+  text-decoration: none;
 }
 
 
