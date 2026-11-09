@@ -11,7 +11,7 @@ body {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 92px 50px;
+  padding: 95px 50px;
 }
 
 .logo {
@@ -136,7 +136,7 @@ body {
   color: white;
   font-size: 20px;
   text-transform: uppercase;
-  word-spacing: 18px;
+  word-spacing: 20px;
   letter-spacing: 1px;
   margin: 0;
   white-space: nowrap;
@@ -226,7 +226,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 70px;
-  padding: 150px 35px 100px 70px;
+  padding: 150px 28px 100px 70px;
 }
 
 .about-logo {
