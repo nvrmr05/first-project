@@ -17,6 +17,7 @@ body {
 .logo {
   width: 148px;
   justify-self: center;
+  display: block;
 }
 
 .menu {
@@ -51,7 +52,7 @@ body {
   justify-self: end;
   font-size: 18px;
   line-height: 22px;
-  margin-right: 28px;
+  margin-right: 38px;
 }
 
 .contacts a {
@@ -142,7 +143,7 @@ body {
 }
 
 .lots {
-  padding: 300px 25px 0;
+  padding: 180px 25px 0;
 }
 
 .lots h2 {
@@ -185,9 +186,7 @@ body {
 }
 
 .lot:nth-child(2) img {
-  object-position: center top;
-  transform: scale(1.5);
-  transform-origin: center top;
+  object-position: center;
   filter: brightness(45%);
 }
 
@@ -227,7 +226,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 70px;
-  padding: 150px 50px 100px 70px;
+  padding: 150px 25px 100px 70px;
 }
 
 .about-logo {
@@ -254,7 +253,7 @@ body {
 .about-content h2 {
   font-size: 40px;
   font-weight: bold;
-  margin: 0 0 90px;
+  margin: 0 0 98px;
 }
 
 .about-content p {
