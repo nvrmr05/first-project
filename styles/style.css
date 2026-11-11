@@ -193,6 +193,7 @@ body {
 .lot:nth-child(3) img {
   object-position: 30% center;
 }
+
 .lot h3,
 .lot p {
   position: relative;
@@ -208,6 +209,7 @@ body {
   text-transform: uppercase;
   text-decoration: underline;
 }
+
 .lot p {
   font-size: 20px;
   line-height: 24px;
